@@ -125,7 +125,7 @@ class FeatureResolverTest {
     @Test
     void example() {
         TestDescriptor example = getExample();
-        assertEquals("Example #1", example.getDisplayName());
+        assertEquals("A scenario outline", example.getDisplayName());
         assertEquals(
             asSet(create("FeatureTag"), create("Example1Tag"), create("ScenarioOutlineTag")),
             example.getTags());
@@ -149,7 +149,7 @@ class FeatureResolverTest {
             JUNIT_PLATFORM_NAMING_STRATEGY_PROPERTY_NAME, "long");
 
         TestDescriptor example = getExample();
-        assertEquals("A feature with scenario outlines - A scenario outline - With some text - Example #1",
+        assertEquals("A feature with scenario outlines - A scenario outline",
             example.getDisplayName());
     }
 

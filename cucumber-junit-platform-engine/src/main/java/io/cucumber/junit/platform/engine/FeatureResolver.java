@@ -123,7 +123,7 @@ final class FeatureResolver {
                 PickleDescriptor descriptor = new PickleDescriptor(
                     parameters,
                     source.exampleSegment(parent.getUniqueId(), node),
-                    namingStrategy.name(node),
+                    namingStrategy.name(node, pickle),
                     source.nodeSource(node),
                     pickle);
                 parent.addChild(descriptor);
